@@ -1,0 +1,25 @@
+ #include<stdio.h>
+int main()
+{
+   int n,diff,i=1,esum=0,osum=0;
+    printf("Enter a number n:\n");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(i%2 != 0)
+        {
+            osum=osum+i;
+        }
+        i++;
+        if(i%2 == 0)
+        {
+            esum=esum+i;
+        }
+        i++;
+    }
+    printf("Sum of ODD integer number is %d\n",osum);
+    printf("Sum of EVEN integer numbers is %d\n",esum);
+   diff=osum-esum;
+   printf("%d",diff);
+   return 0;
+}
