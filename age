@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+	int age,babyage=0,schoolage=0,adultage=0,n=0;	while(n<20)	{
+		printf("Enter age of person [%d]: ",n+1);
+		scanf("%d",&age);
+		if(age>=0 && age<=5)
+			babyage++;
+		else if(age>=6 && age<=17)
+			schoolage++;
+		else
+			adultage++;
+		n++;
+	}
+	printf("Baby age: %d\n",babyage);
+	printf("School age: %d\n",schoolage);
+	printf("Adult age: %d\n",adultage);
+	return 0;
+}
