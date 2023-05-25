@@ -1,0 +1,23 @@
+#include<stdio.h>
+#define max_size 100
+main()
+{
+    int a[max_size],i,n,w,m=0;
+    //size in w
+    scanf("%d",&w);
+    printf("Enter given elements:\n");
+    for(i=0;i<w;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter the element to want ");
+    scanf("%d",&n);
+    for(i=0;i<=w;i++)
+    {
+        if(n==a[i])
+        {
+          m=m+1;
+        }
+    }
+    printf("%d times",m);
+}
