@@ -1,23 +1,23 @@
 #include<stdio.h>
 #include<string.h>
-#define max_size 100
 main()
 {
-	char s[max_size];	int i=0,low=0,digit=0,spl=0,upr=0,ch;
+	char s[100];	
+  int i=0,low=0,digit=0,spl=0,upr=0,ch;
 	printf("Enter a string: ");
 	gets(s);
   while(s[i]!=0)
 	{
-	    ch=s[i];
+  ch=s[i];
 		if(ch>='a'&&ch<='z')
 			low++;
-	    else if (ch>='A'&&ch<='Z')
-            upr++;
-      else if (ch>='0'&&ch<='9')
-            digit++;
-        else
-            spl++;
-        i++;
+	else if (ch>='A'&&ch<='Z')
+     upr++;
+  else if (ch>='0'&&ch<='9')
+     digit++;
+  else
+     spl++;
+  i++;
 	}
 	printf("\nlower=%d",low);
 	printf("\nspecial=%d",spl);
